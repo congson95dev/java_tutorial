@@ -128,11 +128,17 @@ public class Syntax {
 
 
         // Practice about System.in and System.out
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Name: ");
-        String name = scanner.nextLine().trim();
-        System.out.println("You are " + name);
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Name: ");
+//        String name = scanner.nextLine().trim();
+//        System.out.println("You are " + name);
 
-
+        // Practice about generic class
+        // Generic is a feature of java, which lets us no need to define the correct type of column when we define the class
+        // so we can call GenericBox with Integer or String or any types that we want
+        GenericBox box1 = new GenericBox<Integer>(15);
+        System.out.println("Generic Box value: " + box1.getValue());
+        GenericBox box2 = new GenericBox<String>("Some data");
+        System.out.println("Generic Box value: " + box2.getValue());
     }
 }
