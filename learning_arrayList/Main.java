@@ -1,7 +1,43 @@
 package learning_arrayList;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
 public class Main {
     public static void main(String[] args) {
+        // handle ArrayList by Collections
+
+        // generate ArrayList
+        ArrayList<Integer> array = new ArrayList<>();
+        array.add(5);
+        array.add(4);
+        array.add(6);
+        array.add(9);
+        array.add(1);
+
+        // print
+        for (Integer o : array) {
+            System.out.println(o);
+        }
+
+        // sort
+        Collections.sort(array);
+        // print
+        for (Integer o : array) {
+            System.out.println(o);
+        }
+
+        // find max
+        int max = Collections.max(array);
+        System.out.println("max is: " + max);
+
+        // find min
+        int min = Collections.min(array);
+        System.out.println("min is: " + min);
+
+        // handle StudentList
+
         // generate empty StudentList
         StudentList studentList = new StudentList();
 
